@@ -1,6 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://psantosconstruction.com/</loc><lastmod>2026-10-05</lastmod></url>
-  <url><loc>https://psantosconstruction.com/privacy-policy</loc><lastmod>2026-10-05</lastmod></url>
-  <url><loc>https://psantosconstruction.com/terms</loc><lastmod>2026-10-05</lastmod></url>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  <url>
+    <loc>https://psantosconstruction.com/</loc>
+    <lastmod>2026-10-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://psantosconstruction.com/assets/img/brand/og-psantos-construction.jpg</image:loc>
+      <image:title>Pool patio and fieldstone retaining wall by PSantos Construction, Milford, MA</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://psantosconstruction.com/privacy-policy</loc>
+    <lastmod>2026-10-05</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  <url>
+    <loc>https://psantosconstruction.com/terms</loc>
+    <lastmod>2026-10-05</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.2</priority>
+  </url>
 </urlset>

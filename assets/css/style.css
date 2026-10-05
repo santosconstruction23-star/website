@@ -554,7 +554,7 @@ ul { margin: 0; padding: 0; list-style: none; }
 @keyframes sway-leaves { from { transform: rotate(0deg); } to { transform: rotate(-2.5deg); } }
 @media (max-width: 920px) { .deco-ring { left: -5%; width: 100%; top: -10%; } }
 
-.stone-band { height: 96px; background: url("../img/stone-band.svg") repeat-x left bottom / auto 96px; position: relative; z-index: 1; margin-top: -24px; }
+.stone-band { height: 96px; background: url("../img/ui/stone-band.svg") repeat-x left bottom / auto 96px; position: relative; z-index: 1; margin-top: -24px; }
 @media (max-width: 640px) { .stone-band { height: 72px; background-size: auto 72px; margin-top: -18px; } }
 
 @media (prefers-reduced-motion: reduce) {
@@ -703,3 +703,6 @@ h1, h2, h3, .step-title { text-transform: capitalize; }
 h1, h2, h3, .step-title { text-wrap: balance; }
 .hero .h1 { text-wrap: balance; }
 .lead, .hero-sub, .answer p, .service-body p, .step p { text-wrap: pretty; }
+
+.form-limit { margin-top: 16px; padding: 14px 16px; border-radius: var(--r-sm); background: #fdecea; color: #7a1d16; font-weight: 600; font-size: .9rem; }
+.form-limit a { color: inherit; text-decoration: underline; }

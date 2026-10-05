@@ -273,6 +273,30 @@
       };
     }
 
+    // Spam guard: at most 10 estimate requests per browser in any rolling 24 hours
+    const MAX_SUBMISSIONS = 10;
+    const WINDOW_MS = 24 * 60 * 60 * 1000;
+    const KEY = 'psFormSubs';
+    const recent = () => {
+      try { return (JSON.parse(localStorage.getItem(KEY)) || []).filter((t) => Date.now() - t < WINDOW_MS); } catch (err) { return []; }
+    };
+    form.addEventListener('submit', (e) => {
+      if (e.defaultPrevented) return;
+      const sent = recent();
+      if (sent.length >= MAX_SUBMISSIONS) {
+        e.preventDefault();
+        let note = form.querySelector('.form-limit');
+        if (!note) {
+          note = document.createElement('p');
+          note.className = 'form-limit';
+          note.setAttribute('role', 'alert');
+          note.innerHTML = 'You have reached the limit of requests for today. Please call us at <a href="tel:+17744164001">(774) 416-4001</a>.';
+          form.querySelector('.form-step:last-of-type').appendChild(note);
+        }
+        return;
+      }
+      try { localStorage.setItem(KEY, JSON.stringify(sent.concat(Date.now()))); } catch (err) { /* storage blocked: Web3Forms still rate-limits server-side */ }
+    });
     form.addEventListener('submit', (e) => {
       if (e.defaultPrevented) return;
       const btn = form.querySelector('button[type="submit"]');

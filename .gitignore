@@ -1,0 +1,15 @@
+# OS / editor
+.DS_Store
+Thumbs.db
+desktop.ini
+.vscode/
+.idea/
+
+# Never commit secrets or local config
+.env
+*.local
+
+# Source files that are not part of the deployed site
+*.psd
+*.ai
+*.zip

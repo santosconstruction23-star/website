@@ -1,5 +1,5 @@
 User-agent: *
 Allow: /
-Disallow: /thanks
 
+# /thanks and /404 are kept out of search with a noindex tag, so they must stay crawlable.
 Sitemap: https://psantosconstruction.com/sitemap.xml

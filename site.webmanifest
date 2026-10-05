@@ -1,0 +1,28 @@
+{
+  "name": "PSantos Construction",
+  "short_name": "PSantos",
+  "description": "Retaining walls, paver patios and hardscaping in Milford, MA.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "browser",
+  "background_color": "#f5f2ea",
+  "theme_color": "#11351e",
+  "icons": [
+    {
+      "src": "/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
+      "src": "/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ]
+}
